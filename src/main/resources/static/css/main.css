@@ -152,7 +152,12 @@ body {
 	perspective: 1500px;
 	perspective-origin: 50% 319px
 }
-
+@media(max-width:760px){
+	
+	#contacts{
+		margin-top:50px;
+	}
+}
 .mainarea-content.active {
 	opacity: 1;
 	z-index: 30;

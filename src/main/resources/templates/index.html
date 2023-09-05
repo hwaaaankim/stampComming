@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>2023 온라인 우표전시회</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style type="text/css">
+			.loading_stop{
+				position: fixed;
+			    width: 100%;
+			    height: 100%;
+			    z-index: 9999;
+			    background: white;
+			}
+		</style>
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Exo+2:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,700,700italic,600,600italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/bg-slider.css" />
+		<link rel="stylesheet" type="text/css" href="clock/css/clock.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	</head>
+	<body class="singleimg">
+		
+		<div class="loading_stop"></div>
+		<section class="main-menu-container">
+			<div class="show_toggle"><a href="#"></a></div>
+			<ul class="main-menu">
+				<li>
+					<a href="#" class="home-link">HOME</a>
+				</li>
+				<li>
+					<a href="#" data-page="contacts">이벤트신청</a>
+				</li>
+			</ul>
+		</section>
+		<section class="twitter-container">
+			<div class="logo-wrap">
+				<img src="logo.png" width="150px;">
+			</div>
+			<div class="twitter">
+				<ul class="tweet_list" id="tweet_list">
+					<li class="tweet_first tweet_odd">
+						<span class="tweet_text">우표전설관
+							<br><a href="#">[전설 : 영롱한 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
+					</li>
+					<li class="tweet_even">
+						<span class="tweet_text">우표동화관
+							<br><a href="#">[전설 : 따뜻한 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
+					</li>
+					<li class="tweet_odd">
+						<span class="tweet_text">우표대화관
+							<br><a href="#">[전설 : 교감하는 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="mainarea">
+			<div id="clock" class="active">
+				<div class="clock-container">
+					<div id="time-container-wrap">
+						<div id="time-container">
+							<div class="numbers-container"></div>
+							<span id="ticker" class="clock-label">TICKER</span>
+							<span id="timelable" class="clock-label">TIME LEFT</span>
+							<span id="timeleft" class="clock-label">COUNTDOWN</span>
+							<figure id="canvas"></figure>
+						</div>
+					</div>
+				</div>
+				<div class="text-wrap">
+					<h3>2023 온라인 우표 전시회가 곧 시작합니다.</h3>
+					<p>다양한 컨텐츠와 즐거움을 준비하고 있으니,</p>
+					<p>많은 기대와 관심 그리고 참여를 부탁드립니다.</p>
+				</div>
+			</div>
+			<div class="mainarea-content">
+				<div id="contacts" data-page="contacts" class="side-page side-right went-right">
+					<div class="container">
+						<h2 class="title">2023 온라인 우표 전시회</h2>
+						<p>
+							세종문화회관 미술관 2관
+							<br>
+							P: (123) - 456 789 · email@email.com
+						</p>
+						<form action="#" class="contact-list">
+							<div class="field-row">
+								<input class="form_item" type="text" name="name" placeholder="성함을 입력 해 주세요." />
+							</div>
+							<div class="field-row">
+								<input class="form_item" type="text" name="email" placeholder="연락처를 입력 해 주세요." />
+							</div>
+							<div class="field-row">
+								<input class="form_item" type="text" name="message" placeholder="인스타그램 ID를 입력 해 주세요." />
+							</div>
+							<div class="field-row">
+								<input type="submit" class="form_submit" value="이벤트 신청!!" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<a class="close" href="#"><img alt="" src="img/close.png"></a>
+		</section>
+		<section class="social-container">
+			<ul class="social">
+				<li>
+					<a href="https://www.facebook.com/people/2022-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD-%EC%9A%B0%ED%91%9C%EC%A0%84%EC%8B%9C%ED%9A%8C/100076474419803/"><img src="f.png" alt="" /></a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/@KoreaPostalServiceAgency/featured"><img src="y.png" alt="" /></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/korea.stamp/"><img src="i.png" alt="" /></a>
+				</li>
+			</ul>
+		</section>
+		<script src="js/vendor/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/classie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/jquery.easing.1.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/jquery.tubular.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/jquery.cycle.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/plugins.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="clock/js/svg.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="clock/js/svg.easing.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="clock/js/svg.clock.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/ThreeWebGL.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vendor/ThreeExtras.js" type="text/javascript" charset="utf-8"></script>
+		<script src="clock/js/jquery.timers.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="clock/js/clock.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+        	setTimeout(function(){
+			  $('.loading_stop').css('display','none');
+			}, 700);
+        </script>
+	</body>
+</html>

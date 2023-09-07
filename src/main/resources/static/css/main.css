@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Bowlby+One&family=Do+Hyeon&family=Edu+SA+Beginner&family=Hahmlet:wght@200;300;400;500;600;700&family=IBM+Plex+Sans+KR:wght@300;400;500;600&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Sunflower:wght@300;500;700&display=swap');
 button, html, input, select, textarea {
-	color: #222
+	color: black;
 }
 
 html {
@@ -98,11 +99,15 @@ body.snowflakes {
 }
 
 body.singleimg {
-	background: url(../bggg.png) center center no-repeat;
+	background: url(../new/bg_p.jpg) center center no-repeat;
 	background-size: cover;
-	
 }
-
+@media(max-width:600px){
+	body.singleimg {
+		background: url(../new/bg_m.jpg) center center no-repeat;
+		background-size: cover;
+	}	
+}
 #change {
 	background: url(../img/demo/bg.png) no-repeat center center fixed
 		#a6a6a6;
@@ -155,8 +160,12 @@ body {
 @media(max-width:760px){
 	
 	#contacts{
+		margin-top:150px;
+	}
+	.close.active{
 		margin-top:50px;
 	}
+	
 }
 .mainarea-content.active {
 	opacity: 1;
@@ -253,9 +262,9 @@ body {
 
 .mainarea h2 {
 	margin: 0 0 57px 0;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 100;
-	font-size: 72px;
+	font-size: 62px;
 	color: #fffefe;
 	text-align: center
 }
@@ -263,7 +272,7 @@ body {
 .mainarea h3 {
 	margin: 0 0 35px 0;
 	color: #fffefe;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 100;
 	font-size: 36px;
 	text-align: center
@@ -271,7 +280,7 @@ body {
 
 .mainarea p {
 	margin: 0 0 24px 0;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
 	color: #fffefe;
 	font-size: 18px;
@@ -368,7 +377,7 @@ body {
 	font-weight: 300;
 	border: 1px solid #cdcfd0;
 	background: rgba(255, 255, 255, .09);
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 16px;
 	color: #fff
 }
@@ -383,7 +392,7 @@ body {
 	border-left-width: 0;
 	background: rgba(255, 255, 255, .09);
 	font-size: 14px;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	text-transform: uppercase;
 	color: #fffefe
 }
@@ -413,7 +422,7 @@ body {
 	padding-top: 10px;
 	margin-right: 2px;
 	text-align: right;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 14px;
 	font-weight: 300;
 	color: #fff
@@ -422,7 +431,7 @@ body {
 .success {
 	text-align: center;
 	font-size: 19px;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
 	color: #fff
 }
@@ -453,7 +462,7 @@ body {
 	margin: 0;
 	font-size: 24px;
 	color: #fffefe;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 200
 }
 
@@ -492,7 +501,7 @@ body {
 	text-align: center
 }
 
-.contact-list input[type=email], .contact-list input[type=text] {
+.contact-list input[type=email], .contact-list input[type=text], .contact-list textarea {
 	width: 100%;
 	height: 32px;
 	line-height: 32px;
@@ -500,7 +509,7 @@ body {
 	background: 0 0;
 	border: none;
 	border-bottom: 1px solid #a8a8aa;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-size: 18px;
 	color: #fff;
 	text-align: center
@@ -547,20 +556,20 @@ body {
 
 .twitter-container {
 	position: absolute;
-	top: 126px;
-	left: 110px;
+	top: 150px;
+	left: 114px;
 	min-height: 106px;
 	min-width: 290px;
-	padding-left: 64px;
+	padding-left: 70px;
 	z-index: 50;
-	background: url(../img/twitter-bg.png) no-repeat left top;
+	background: url(../new/icon.png) no-repeat left top;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box
 }
 
 .twitter {
-	margin: 16px 19px
+	margin: 16px 19px 16px 0px;
 }
 
 .tweet_list {
@@ -574,7 +583,7 @@ body {
 	font-size: 12px;
 	line-height: 15px;
 	color: #fff;
-	font-family: 'Open Sans'  sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	display: none;
 }
 
@@ -650,7 +659,17 @@ body {
 	height: 2px;
 	border: none
 }
-
+.privacy span{
+	color:white;
+	margin-left:10px;
+}
+.privacy span a{
+	color:white;
+	transition:all 0.3s ease-in-out;
+}
+.privacy span a:hover{
+	color:gray;
+}
 .menu_show .show_toggle a:after {
 	top: 0;
 	-webkit-transform: rotate(-45deg);
@@ -688,7 +707,7 @@ body {
 	color: #fff;
 	text-decoration: none;
 	font-size: 14px;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300
 }
 
@@ -788,7 +807,7 @@ body {
 	line-height: 24px;
 	color: #3b424b;
 	font-weight: 400;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	margin: 0 0 8px;
 	-webkit-transition: all ease .2s;
 	-moz-transition: all ease .2s;
@@ -825,7 +844,7 @@ footer {
 	width: 100%;
 	height: 57px;
 	font-size: 12px;
-	font-family: 'Exo 2', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
 	color: #b0bfc4;
 	line-height: 57px;
 	text-align: center
@@ -950,7 +969,56 @@ footer {
 	margin-bottom:0px;
 	line-height:1.4;
 }
-.logo-wrap{
+.logo-wrap img{
 	position:absolute;
-	top:-100px;
+	width:250px;
+	top:-900px;
+}
+@media(max-width:760px){
+	.logo-wrap img{
+		position:absolute;
+		width:200px;
+		top:40px;
+		left:10px;
+	}
+}
+.privacy-wrap{
+	width:60%;
+	margin:0 auto;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+textarea.privacy-textarea{
+	max-width:100%;
+	width:800px;
+	height:500px;
+	padding:50px 20px 50px 20px;
+	resize: none;
+	line-height:1.6;
+	font-weight:600;
+	font-size:14px;
+	border:2px solid rgba(0,0,0,0.6);
+	box-shadow:0px 5px 10px rgba(0,0,0,0.8);
+	margin:0 auto;
+	background-color:#c7c7c7;
+}
+@media(max-width:960px){
+	.privacy-wrap{
+		width:80%;
+		margin:0 auto;
+	}	
+	textarea.privacy-textarea{
+		width:90%;
+	}
+}
+@media(max-width:760px){
+	.privacy-wrap{
+		width:95%;
+		margin:0 auto;
+	}	
+	textarea.privacy-textarea{
+		width:80%;
+	}
 }

@@ -1,3 +1,6 @@
+/*if (document.location.protocol == 'http:') {
+    document.location.href = document.location.href.replace('http:', 'https:');
+}*/
 (function($) {
 	/* ======= Clear Default ====== */
 	$.fn.clearDefault = function() {
@@ -32,7 +35,7 @@
 			return false;
 		});
 
-		$('.form_submit').click(function(){
+		$('.form_submit123').click(function(){
 			var form = $(this).parents('form');
 			form.find('.form_item').removeClass('error');
 			form.find('.error_block').remove();

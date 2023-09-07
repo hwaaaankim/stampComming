@@ -27,11 +27,14 @@
 		<link rel="stylesheet" type="text/css" href="css/responsive.css">
 		<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	</head>
-	<body class="singleimg">
+	<body class="singleimg menu_show">
 		
 		<div class="loading_stop"></div>
+		
 		<section class="main-menu-container">
-			<div class="show_toggle"><a href="#"></a></div>
+			<div class="logo-wrap">
+				<img src="./new/logo.png">
+			</div>
 			<ul class="main-menu">
 				<li>
 					<a href="#" class="home-link">HOME</a>
@@ -42,9 +45,7 @@
 			</ul>
 		</section>
 		<section class="twitter-container">
-			<div class="logo-wrap">
-				<img src="logo.png" width="150px;">
-			</div>
+			
 			<div class="twitter">
 				<ul class="tweet_list" id="tweet_list">
 					<li class="tweet_first tweet_odd">
@@ -52,12 +53,16 @@
 							<br><a href="#">[전설 : 영롱한 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
 					</li>
 					<li class="tweet_even">
-						<span class="tweet_text">우표동화관
-							<br><a href="#">[전설 : 따뜻한 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
+						<span class="tweet_text">우표예술관
+							<br><a href="#">[예술 : 아름다운 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
+					</li>
+					<li class="tweet_even">
+						<span class="tweet_text">우표역사관
+							<br><a href="#">[역사 : 기록하는 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
 					</li>
 					<li class="tweet_odd">
 						<span class="tweet_text">우표대화관
-							<br><a href="#">[전설 : 교감하는 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
+							<br><a href="#">[대화 : 교감하는 이야기]</a></span><span class="tweet_time"><a href="#" title="view tweet on twitter">Comming Soon</a></span>
 					</li>
 				</ul>
 			</div>
@@ -68,7 +73,7 @@
 					<div id="time-container-wrap">
 						<div id="time-container">
 							<div class="numbers-container"></div>
-							<span id="ticker" class="clock-label">TICKER</span>
+							<span id="ticker" class="clock-label">STAMPEX</span>
 							<span id="timelable" class="clock-label">TIME LEFT</span>
 							<span id="timeleft" class="clock-label">COUNTDOWN</span>
 							<figure id="canvas"></figure>
@@ -76,32 +81,38 @@
 					</div>
 				</div>
 				<div class="text-wrap">
-					<h3>2023 온라인 우표 전시회가 곧 시작합니다.</h3>
-					<p>다양한 컨텐츠와 즐거움을 준비하고 있으니,</p>
-					<p>많은 기대와 관심 그리고 참여를 부탁드립니다.</p>
+					<h3>2023 대한민국 우표전시회가 곧 시작합니다.</h3>
+					<p>잠시만 기다려 주세요.</p>
+					<p>다양한 콘텐츠와 즐거움이 가득한 이야기로 찾아 뵙겠습니다.</p>
 				</div>
 			</div>
 			<div class="mainarea-content">
-				<div id="contacts" data-page="contacts" class="side-page side-right went-right">
+				<div id="contacts" class="side-page side-right went-right">
 					<div class="container">
-						<h2 class="title">2023 온라인 우표 전시회</h2>
+						<h2 class="title">2023 대한민국 우표전시회</h2>
 						<p>
-							세종문화회관 미술관 2관
+							공식인스타그램을 통해 사전 이벤트가 진행 중 입니다. 
 							<br>
-							P: (123) - 456 789 · email@email.com
+							하단의 인스타그램 버튼을 클릭하여 자세하게 확인 해 보세요.
 						</p>
-						<form action="#" class="contact-list">
+						<form action="/eventParticipant" onsubmit="return formCheck();" class="contact-list" method="POST">
 							<div class="field-row">
-								<input class="form_item" type="text" name="name" placeholder="성함을 입력 해 주세요." />
+								<input class="form_item" required="required" type="text" name="name" placeholder="성함을 입력 해 주세요." />
 							</div>
 							<div class="field-row">
-								<input class="form_item" type="text" name="email" placeholder="연락처를 입력 해 주세요." />
+								<input class="form_item" required="required" type="text" name="phone" placeholder="연락처를 입력 해 주세요." />
 							</div>
 							<div class="field-row">
-								<input class="form_item" type="text" name="message" placeholder="인스타그램 ID를 입력 해 주세요." />
+								<input class="form_item" required="required" type="text" name="instagramId" placeholder="인스타그램 ID를 입력 해 주세요." />
 							</div>
 							<div class="field-row">
-								<input type="submit" class="form_submit" value="이벤트 신청!!" />
+								<textarea class="form_item" name="answer" placeholder="이벤트 답변을 입력 해 주세요."></textarea>
+							</div>
+							<div class="field-row privacy">
+								<input type="checkbox" class="form_submit" id="privacy" /><span><a href="/privacy">개인정보 취급 방침 동의</a></span>
+							</div>
+							<div class="field-row">
+								<input type="submit" class="form_submit" value="이벤트 신청" />
 							</div>
 						</form>
 					</div>
@@ -140,6 +151,28 @@
         	setTimeout(function(){
 			  $('.loading_stop').css('display','none');
 			}, 700);
+        	function formCheck(){
+        		var result = confirm('이벤트 신청을 진행하시겠습니까?');
+        		
+        		if(result){
+        			if($('input:checkbox[id="privacy"]').is(':checked')){
+        				/* $.post('/eventParticipant',{
+        					name : $('#name').val(),
+        					phone : $('#phone').val(),
+        					instagramId : $('#instagramId').val()
+        				}, function(data, status){
+        					alert('이벤트 신청이 완료 되었습니다.');
+        					location.href='/index';
+        				}); */
+        				return true;
+        			}else{
+        				alert('개인정보 취급방침에 동의해 주세요.');
+        				return false;
+        			}
+        		}else{
+        			return false;
+        		}
+        	}
         </script>
 	</body>
 </html>
